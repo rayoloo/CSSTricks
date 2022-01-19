@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import './Hero.css'
 
-export const Hero = () => {
+const Hero = () => {
 	return (
 		<div className='hero'>
 			<div className='content'>
@@ -16,9 +16,9 @@ export const Hero = () => {
 						<input type='text' placeholder='Enter Keyword...' />
 					</div>
 					<div className='radio'>
-						<input type='radio' checked></input>
+						<input type='radio' checked onChange={() => {}} />
 						<label>Buy</label>
-						<input type='radio'></input>
+						<input type='radio' />
 						<label>Rent</label>
 						<button type='submit'>
 							<AiOutlineSearch className='icon' />
@@ -29,3 +29,5 @@ export const Hero = () => {
 		</div>
 	)
 }
+
+export default Hero
